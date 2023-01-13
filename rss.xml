@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Teodora Nedeljkovic photography</title>
+		<link>index.html</link>
+		<description>Welcome to my page</description>
+		<item>
+			<title>SANDS OF THE SAHEL</title>
+			<link>travel.html</link>
+			<description>A trip to Africa, Sahel.</description>
+		</item>
+		<item>
+			<title>THE SEA NOMADS OF SOUTHEAST ASIA</title>
+			<link>travel.html</link>
+			<description>A trip to Southeast Asia.</description>
+		</item>
+	</channel>
+</rss>

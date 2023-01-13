@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark&subset=latin-ext');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+h1, h2, h3, p, a, i, input{
+	font-family: 'Palanquin Dark', sans-serif;
+	color: rgb(236, 229, 255);
+}
+h1,h2,h3{
+	text-transform: uppercase;
+	font-weight:1;
+}
+h3{
+	letter-spacing: 10px;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+#P1{
+	background: url('../images/background.jpeg') no-repeat;
+	background-size: cover;
+}
+/********H E A D E R*********/
+header{
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
+li:nth-child(1), li:nth-child(2), li:nth-child(3), li:nth-child(4){
+	width:120px;
+}
+.icon{
+	width: 40px;
+}
+#meni ul{
+	display: flex;
+  	margin-top: 20px;
+	margin-right: 10px;
+}
+#meni ul li{
+	text-align: center;
+}
+#meni{
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+#meni ul li a:hover{
+	text-decoration: line-through;
+}
+#meni ul li ul{
+	display: none;
+}
+#meni ul li ul li{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#meni ul li:hover ul{
+	display: flex;
+	flex-direction: column;
+	height: 34px;
+}
+#title{
+	margin-top: 15px;
+	margin-left: 20px;
+	letter-spacing: 3px;
+}
+#title h1{
+	font-size: 31px;
+	letter-spacing: 10px;
+}
+#title p{
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+#title:nth-child(1):hover{
+	animation: neon 1.5s ease-in-out infinite alternate;
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 18px #fff, 0 0 25px #fff, 0 0 35px #6f30c1, 0 0 62px #6f30c1, 0 0 75px #228DFF, 0 0 75px #228DFF, 0 0 80px #6f30c1;
+  }
+  to {
+    text-shadow: 0 0 5px #d4b5ff, 0 0 10px #d4b5ff, 0 0 15px #d4b5ff, 0 0 20px #6f30c1, 0 0 35px #6f30c1, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #6f30c1;
+  }
+}
+
+/***F O O T E R***/
+footer{
+	width: 100%;
+	height: 100px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+}
+footer p{
+	font-size: 12px;
+	align-self: flex-end;
+}
+
+
+/*************P O R T F O L I O***************/
+				/*places*/
+body{
+	background-color: rgb(0, 0, 0);
+}
+#main{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+}
+.wrapper{
+	width: 85%;
+	border-left: solid rgb(255,255,255) 1px;
+	border-right: solid rgb(255,255,255) 1px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+figure{
+	margin:15px;
+}
+.horFig{
+	width: 400px;
+	height: 300px;
+}
+.verFig{
+	width: 400px;
+	height: 600px;
+}
+figure{
+	transition: transform .2s;
+}
+figure:hover{
+	transform: scale(1.03);
+}
+
+/***************TRAVEL******************/
+.trav1{
+	background: url('../images/fisherman1.jpeg') no-repeat;
+}
+.trav2{
+	background: url('../images/mountain.jpeg') no-repeat;
+}
+.trav1, .trav2{
+	width: 100%;
+	height:500px;
+	background-size: cover;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+}
+.travel2{
+	margin-bottom: 150px;
+}
+.travel p:nth-of-type(1), .travel p:nth-of-type(3){
+	text-align: center;
+}
+.travel p:nth-of-type(2), .travel p:nth-of-type(4){
+	text-align: justify;
+	margin:0% 15% 0% 15%;
+}
+
+.sand1{
+	background-image: url('../images/sand1.jpeg');
+}
+.sand2{
+	background-image: url('../images/sand2.jpeg');
+}
+.fish2{
+	background-image: url('../images/fish2.jpeg');
+}
+.fish1{
+	background-image: url('../images/fish1.jpg');
+}
+.sand1, .sand2, .fish2, .fish1{
+	background-size: cover;
+}
+
+.over.sand1, .over.sand2, .over.fish1, .over.fish2{
+	margin-bottom: 60px;
+}
+.travel.travel1 p{
+	margin-bottom: 30px;
+}
+.over{
+	width: 70%;
+	height: 450px;
+	margin: 0px auto;
+	transition: opacity 1s ease-out;
+	opacity: 0.6;
+}
+.over:hover{
+	opacity: 1;
+}
+.trav h3{
+	margin-top: 30px;
+}
+
+
+/*************A B O U T***************/
+#authorImg{
+	width: 100%;
+	height: 500px;
+	background: url('../images/author.jpeg') fixed;
+	background-size: cover;
+}
+#authorImg h2{
+	text-align: center;
+	letter-spacing: 10px;
+	margin-top: 30px;
+}
+#textP3, #projP3{
+	margin-top: 90px;
+	width: 80%;
+	text-align: center;
+}
+#projP3 h3{
+	margin-bottom: 20px;
+}
+
+
+
+/**********C O N T A C T************/
+.wrapper.wrapperP7{
+	display: flex;
+	justify-content: space-around;
+}
+#sendMessage{
+	width: 400px;
+	text-align: center;
+	color: white;
+}
+#form{
+	width: 100%;
+}
+.inputLi{
+	margin: 15px 0;
+	padding: 10px;
+	border: none;
+	border-radius: 40px;
+	outline: none;
+	width: 400px;
+	color: #000;
+}
+
+input[type="submit"]{
+	border: 1px solid #d4b5ff;
+	background-color: #141516;
+	margin-top: 20px;
+	padding: 10px 50px;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: .4s;
+}
+input[type="submit"]:hover{
+	background-color: #2b2d30;
+	padding: 10px 80px;
+}
+#form h3{
+	margin-bottom: 20px;
+}
+input:focus{
+	background-color: #d4b5ff;
+	transform: scale(1.03)
+}
+input, #footerContact a, i{
+	letter-spacing: 1px;
+	font-weight: 1px;
+}
+input{
+	transition: transform .4s;
+}
+#footerContact h3{
+	margin-bottom: 20px;
+}
+#footerContact a:hover{
+	color: #d4b5ff;
+}
